@@ -375,7 +375,7 @@ func (c *completer) setSurrounding(ident *ast.Ident) {
 		// Overwrite the prefix only.
 		tokFile: c.tokFile,
 		start:   ident.Pos(),
-		end:     ident.End(),
+		end:     c.pos,
 		mapper:  c.mapper,
 	}
 
